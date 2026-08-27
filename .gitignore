@@ -1,0 +1,39 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+.env
+.venv/
+venv/
+*.pkl
+*.joblib
+*.log
+
+# Local notes / private docs
+/mdfile/
+PROJECT_INTERVIEW_GUIDE.md
+
+# Duplicate notebooks
+notebooks/Insurance_Fraud_ML_Pipeline_new - Copy.ipynb
+notebooks/Insurance_Fraud_ML_Pipeline_new copy.ipynb
+
+# Data artifacts
+/data/processed/
+/data/interim/
+/data/raw/
+*.csv
+
+# Model artifacts
+/models/
+notebooks/models/
+
+# Notebook-generated artifacts
+notebooks/reports/
+notebooks/catboost_info/
+notebooks/configs/
+
+# Reports / logs / caches
+/reports/
+/logs/
+.pytest_cache/
+.virtual_documents/

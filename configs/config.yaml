@@ -1,0 +1,23 @@
+data:
+  raw_dir: data/raw
+  interim_dir: data/interim
+  processed_dir: data/processed
+
+reports:
+  reports_dir: reports
+
+models:
+  fraud_model_path: models/fraud_model.pkl
+  severity_model_path: models/severity_model.pkl
+  metadata_path: models/metadata.json
+
+training:
+  random_state: 42
+  test_size: 0.15
+  val_size: 0.15
+  cv_splits: 5
+  regression_search_n_iter: 2
+  regression_cv_splits: 3
+  max_reg_search_rows: 3000
+  run_shap: false
+  enable_boosting_experiments: false
