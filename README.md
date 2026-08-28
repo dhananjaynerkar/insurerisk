@@ -24,6 +24,8 @@ The following folders are intentionally ignored by Git:
 
 Do not commit private datasets, model binaries, cache folders, or generated reports.
 
+See [dataset provenance notes](docs/DATASET_PROVENANCE.md) for the input-data publication boundary.
+
 ## Setup
 
 Run these commands from the project root:
@@ -68,6 +70,23 @@ python scripts/smoke_load.py
 python scripts/inspect_model.py
 pytest -q
 ```
+
+
+
+## Evaluation snapshot
+
+The documented notebook output at commit 5c5b99564313c9c84021e8e1dce263e1eba99ad6 records a temporal split of 7,000 train rows, 1,500 validation rows, and 1,500 test rows. The selected checkpoint was Autoencoder (Anomaly) with a threshold of 0.20.
+
+| Metric | Test-window result |
+| --- | ---: |
+| PR-AUC | 0.044732 |
+| ROC-AUC | 0.483760 |
+| Recall | 0.898551 |
+| Precision | 0.046757 |
+| F2 score | 0.193508 |
+| Business loss | 982,000 |
+
+These values are a documented notebook checkpoint, not a new run or a claim of production success. The high recall and low precision show the review-capacity trade-off. The notebook's false-negative and false-positive costs are scenario parameters, not verified insurer costs or business savings. See [evaluation notes](docs/EVALUATION_NOTES.md) for the interpretation boundary and required run metadata.
 
 ## Model Selection
 
