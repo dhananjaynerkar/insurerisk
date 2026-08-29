@@ -4,6 +4,10 @@
 
 An evaluation-aware insurance fraud and claim-risk machine-learning pipeline with temporal features, leakage auditing, imbalance handling, threshold tuning, business-loss analysis, serialized artifacts, and a Streamlit scoring interface.
 
+> **Status:** Evaluation-aware local ML pipeline; no production success is claimed.  
+> **Stack:** Python · pandas · scikit-learn · Streamlit · YAML configuration  
+> **Proof:** Temporal validation, leakage auditing, imbalance handling, threshold tuning, and business-loss analysis.
+
 
 This project builds an end-to-end machine learning pipeline for insurance fraud detection and claim severity prediction. It uses time-aware validation, leakage-safe feature engineering, imbalance handling, threshold tuning, business-cost evaluation, and a Streamlit interface for claim risk scoring.
 
